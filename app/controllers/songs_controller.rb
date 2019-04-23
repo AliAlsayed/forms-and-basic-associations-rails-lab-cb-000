@@ -12,6 +12,7 @@ class SongsController < ApplicationController
   end
 
   def create
+    fail
     @song = Song.new(song_params)
 
     if @song.save
